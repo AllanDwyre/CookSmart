@@ -1,0 +1,71 @@
+[versions]
+agp = "8.10.1"
+coilCompose = "2.5.0"
+desugar_jdk_libs = "2.1.5"
+firebaseBom = "33.14.0"
+gson = "2.11.0"
+kotlin = "2.1.0"
+coreKtx = "1.16.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+activityCompose = "1.10.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.10.1"
+constraintlayout = "2.2.1"
+composeBom = "2025.05.01"
+googleid = "1.1.1"
+navigationCompose = "2.9.0"
+playServicesBase = "18.7.0"
+room = "2.7.1"
+lifecycleRuntimeKtx = "2.9.0"
+navigationComposeJvmstubs = "2.9.0"
+firebaseFirestoreKtx = "25.1.4"
+ksp = "1.9.20-1.0.14"
+
+[libraries]
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
+desugar_jdk_libs = { module = "com.android.tools:desugar_jdk_libs", version.ref = "desugar_jdk_libs" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+play-services-base = { module = "com.google.android.gms:play-services-base", version.ref = "playServicesBase" }
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+google-firebase-auth = { module = "com.google.firebase:firebase-auth" }
+
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+googleid = { group = "com.google.android.libraries.identity.googleid", name = "googleid", version.ref = "googleid" }
+
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-navigation-compose-jvmstubs = { group = "androidx.navigation", name = "navigation-compose-jvmstubs", version.ref = "navigationComposeJvmstubs" }
+firebase-firestore-ktx = { group = "com.google.firebase", name = "firebase-firestore-ktx", version.ref = "firebaseFirestoreKtx" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+
